@@ -1,10 +1,17 @@
 #include <iostream>
+<<<<<<< HEAD
 #include "ejercicios.h"
 
 
 using namespace std;
 
 int ejercicio1(){
+=======
+
+using namespace std;
+
+static int ejercicio1(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
 
     int A,B;
     cout<<"ingrese numero 1:"<<endl;
@@ -21,7 +28,11 @@ int ejercicio1(){
     return 0;
 }
 
+<<<<<<< HEAD
 int ejercicio2(){
+=======
+static int ejercicio2(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
     int A;
     cout<<"ingrese numero para determinar paridad: "<<endl;
     cin >> A;
@@ -30,7 +41,11 @@ int ejercicio2(){
     return 0;
 }
 
+<<<<<<< HEAD
 int ejercicio3(){
+=======
+static int ejercicio3(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
     int A,B;
     cout << "ingrese numero: "<<endl;
     cin >> A;
@@ -41,7 +56,11 @@ int ejercicio3(){
     return 0;
 }
 
+<<<<<<< HEAD
 int ejercicio4(){
+=======
+static int ejercicio4(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
     int A,B;
     cout << "ingrese numero: "<<endl;
     cin >> A;
@@ -53,7 +72,11 @@ int ejercicio4(){
     return 0;
 }
 
+<<<<<<< HEAD
 int ejercicio5(){
+=======
+static int ejercicio5(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
     float A,B,division;
     cout<<"ingrese primer numerador"<<endl;
     cin>>A;
@@ -77,7 +100,11 @@ int ejercicio5(){
     return 0;
 }
 
+<<<<<<< HEAD
 int ejercicio6(){
+=======
+static int ejercicio6(){
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
     int A,B,C;
     cout<<"ingrese base: "<<endl;
     cin>>A;
@@ -92,6 +119,7 @@ int ejercicio6(){
 
     return 0;
 }
+<<<<<<< HEAD
 
 int ejercicio8(){
 
@@ -120,3 +148,5 @@ int ejercicio10(){
     return 0;
 }
 
+=======
+>>>>>>> d2868e3fcd1c37d8af5761d33fa4ef14d7a2db27
