@@ -8,6 +8,7 @@ int main()
     cout << "practica1" << endl;
     //ejercicio1();
     int opcion;
+
     cout << "ingrese el numeral del problema (solo pares): "<<endl;
     cin>>opcion;
     switch (opcion) {
@@ -24,10 +25,9 @@ int main()
     case 12:
         problema12();
     case 14:
-        break;
+        problema14();
     case 16:
-        break;
-
+        problema16();
 
     default:
         break;

@@ -7,4 +7,6 @@ int problema6();
 int problema8();
 int problema10();
 int problema12();
+int problema14();
+int problema16();
 #endif // PROBLEMAS_H

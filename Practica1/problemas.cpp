@@ -162,7 +162,9 @@ int problema10(){
 }
 
 bool primo(int num){
-
+    if (num <= 1) {
+        return false;
+    }
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
             return false;
@@ -172,6 +174,100 @@ bool primo(int num){
 }
 
 int problema12(){
+    int numero;
+
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+    int max_factor = 0;
+
+    for (int i = 2; i <= numero; i++) {
+        if (numero % i == 0 && primo(i)) {
+            max_factor = i;
+        }
+    }
+    if (max_factor != 0) {
+        cout << "El mayor factor primo de " << numero << " es: " << max_factor << endl;
+    } else {
+        cout << numero << " no tiene factores primos." << endl;
+    }
 
     return 0;
 }
+
+bool palindromo(int numero) {
+    int original = numero;
+    int inverso = 0;
+
+    while (numero > 0) {
+        int digito = numero % 10;
+        inverso = inverso * 10 + digito;
+        numero /= 10;
+    }
+
+    return original == inverso;
+}
+
+int problema14(){
+    int numero_mayor = 0;
+
+    int num1,num2;
+
+    for (int i = 999; i >= 100; i--) {
+        for (int j =i; j >= 100; j--) {
+            int producto = i * j;
+            if (producto > numero_mayor && palindromo(producto)) {
+                numero_mayor = producto;
+                num1 =i;
+                num2 =j;
+            }
+        }
+    }
+    cout << num1 << " * " << num2 << " = " << numero_mayor << endl;
+
+    return 0;
+}
+
+int problema16(){
+
+    int k;
+    cout<<"ingrese un numero para para hallar la semilla mas larga: "<<endl;
+    cin>>k;
+    int mayor=0;
+    int semilla;
+
+    for(int j=2; j<k; j++){
+        int i=j;
+        int contador=1;
+        while(i!=1){
+            if(i%2==0){
+                i=i/2;
+                contador+=1;
+            }
+            else if(i%2!=0){
+                i = (3*i)+1;
+                contador+=1;
+            }
+
+        if (contador>mayor){
+
+            mayor=contador;
+            semilla=j;
+        }
+        }
+    }
+    cout<<"La serie mas larga es con la semilla: "<<semilla<<" teniendo "<<mayor<<" terminos"<<endl;
+    cout<<semilla<<", ";
+    while(semilla!=1){
+
+        if(semilla%2==0){
+        semilla=semilla/2;
+        cout<<semilla<<", ";
+        }
+        else if(semilla%2!=0){
+        semilla = (3*semilla)+1;
+        cout<<semilla<<", ";
+        }
+
+    }
+    return 0;
+    }
